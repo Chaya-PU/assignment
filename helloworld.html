@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+		
+		function submit()
+		{
+			let val  = document.getElementsByName('helloworld')[0].value;
+			if(val === "HELLO WORLD") 			
+			{
+				alert(val);
+			}
+			else
+			{
+				alert("Please Enter HELLO WORLD in UpperCase");
+			}
+		}
+
+  </script>
+ </head>
+ <body>
+		<label style="color:red">Enter text</label>
+		<input type="text" name="helloworld">
+
+		<input type="submit" onclick="submit()">
+
+		
+  
+ </body>
+</html>
